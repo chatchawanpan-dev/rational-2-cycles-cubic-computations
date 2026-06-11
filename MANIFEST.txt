@@ -1,0 +1,33 @@
+Computational reproducibility bundle
+===================================
+
+Manuscript:
+  Rational 2-Cycles for x^3+bx+a and the Elliptic Family Y^2=X^3+4X^2+16t^2
+
+Bundle purpose:
+  SageMath and Magma scripts plus raw outputs for the first submission.
+
+Files:
+  README.md
+  MANIFEST.txt
+  software_versions_first_submission.txt
+
+  sage_verification/verify_sage_identities.sage
+  sage_verification/verify_sage_identities_output.txt
+
+  magma_5torsion_verification/scripts/c5_x0_normalization_degeneracy_certificate.m
+  magma_5torsion_verification/results/c5_x0_normalization_degeneracy_certificate_output.txt
+  magma_5torsion_verification/prym_chabauty_route/scripts/c5_ritzenthaler_romagny_prym_certificate.m
+  magma_5torsion_verification/prym_chabauty_route/results/c5_ritzenthaler_romagny_prym_certificate_output.txt
+  magma_5torsion_verification/prym_chabauty_route/scripts/c5_prym_torsion_fixed_locus_certificate.m
+  magma_5torsion_verification/prym_chabauty_route/results/c5_prym_torsion_fixed_locus_certificate_output.txt
+
+  magma_7torsion_verification/scripts/verify_7torsion_basic.m
+  magma_7torsion_verification/results/verify_7torsion_basic_output.txt
+  magma_7torsion_verification/reviewer_chabauty_route/scripts/c7_reviewers_elliptic_chabauty.m
+  magma_7torsion_verification/reviewer_chabauty_route/results/c7_reviewers_elliptic_chabauty_output.txt
+
+  short_manuscript_sage/cubic_2periodic_supplementary.sage
+  short_manuscript_sage/cubic_2periodic_supplementary_output.txt
+  short_manuscript_sage/division_polynomials_output.txt
+
