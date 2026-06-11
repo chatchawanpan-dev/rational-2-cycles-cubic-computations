@@ -1,0 +1,73 @@
+Magma V2.29-6     Mon May 25 2026 09:19:58 on Chatchawans-Laptop [Seed = 
+4185924163]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "magma_5torsion_verification/prym_chabauty_route/scripts/c5_ritzen\
+thaler_romagny_prym_certificate.m"
+
+1. Normalize C5 to the Ritzenthaler--Romagny form
+-------------------------------------------------
+Fcan/256 =
+729/256*X^4 + 27/8*X^2*Y^2 + Y^4 + 81*X^3*W - 96*X*Y^2*W + 288*X^2*W^2 + 256*Y^2*W^2 - 3072*X*W^3
+f = 3*X^2 + 64*X*W
+h = -27/8*X^2 + 96*X*W - 256*W^2
+g = 243/256*X^2 + 27/4*X*W - 48*W^2
+Check Fcan/256 = Y^4 - h*Y^2 + f*g: true
+
+2. Coefficient matrix and Ritzenthaler--Romagny data
+----------------------------------------------------
+A =
+[      3      64       0]
+[  -27/8      96    -256]
+[243/256    27/4     -48]
+det(A) = -34560
+A^-1 =
+[   1/12   -4/45  64/135]
+[  3/256   1/240   -1/45]
+[27/8192 -3/2560  -7/480]
+a(t) = 27/8192*t^2 + 3/128*t + 1/12
+b(t) = -3/2560*t^2 + 1/120*t - 4/45
+c(t) = -7/480*t^2 - 2/45*t + 64/135
+Ritzenthaler--Romagny genus-2 polynomial b*(b^2-a*c) =
+-243/4194304000*t^6 - 9/65536000*t^5 - 1/614400*t^4 - 1/43200*t^3 - 1/8100*t^2 + 16/30375*t + 256/91125
+Genus(X_RR) = 2
+
+3. Compare X_RR with the proposed P5
+------------------------------------
+P5 polynomial =
+-9720*t^6 - 1080*t^5 - 600*t^4 - 400*t^3 - 100*t^2 + 20*t + 5
+Genus(P5) = 2
+Is X_RR Q-isomorphic to P5? = true
+One Q-isomorphism X_RR -> P5 is:
+Mapping from: CrvHyp: XRR to CrvHyp: P5
+with equations : 
+3/64*$.1
+675/16*$.2
+$.3
+and inverse
+$.1
+1/409600*$.2
+3/64*$.3
+All Q-isomorphisms returned by Magma:
+[
+Mapping from: CrvHyp: XRR to CrvHyp: P5
+with equations : 
+3/64*$.1*$.3^2
+-675/16*$.2*$.3^6
+$.3^3,
+Mapping from: CrvHyp: XRR to CrvHyp: P5
+with equations : 
+3/64*$.1*$.3^2
+675/16*$.2*$.3^6
+$.3^3
+]
+
+4. Consequence
+--------------
+The Ritzenthaler--Romagny formula applied over Q gives X_RR.
+Magma proves X_RR is Q-isomorphic to the displayed P5.
+Therefore the Prym factor attached to C5 -> C5/<Y -> -Y>
+is Q-isogenous to J(P5).  This is the missing correspondence
+certificate needed by the Section 6 Prym-torsion argument.
+
+Total time: 0.339 seconds, Total memory usage: 32.09MB
