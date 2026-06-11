@@ -1,0 +1,60 @@
+Magma V2.29-6     Mon May 25 2026 09:19:58 on Chatchawans-Laptop [Seed = 
+3818535001]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "magma_5torsion_verification/scripts/c5_x0_normalization_degenerac\
+y_certificate.m"
+
+1. X_0(5) fiber product
+-----------------------
+Projective equation:
+27*L^6*T^4 + 810*L^5*T^4*Z + 16*L^6*T^2*Z^2 + 8505*L^4*T^4*Z^2 + 480*L^5*T^2*Z^3 + 35100*L^3*T^4*Z^3 + 5040*L^4*T^2*Z^4 + 42525*L^2*T^4*Z^4 + 20800*L^3*T^2*Z^5 + 20250*L*T^4*Z^5 + 25200*L^2*T^2*Z^6 + 3375*T^4*Z^6 + 12000*L*T^2*Z^7 + 2000*T^2*Z^8 + 4096*L*Z^9
+Genus(Csing) = 3
+Singular points = {@ (0 : 1 : 0), (1 : 0 : 0) @}
+Every singular point has L*T*Z = 0.
+
+2. Canonical plane-quartic normalization
+----------------------------------------
+Canonical image is non-hyperelliptic = true
+Canonical quartic equation:
+729*X^4 + 864*X^2*Y^2 + 256*Y^4 + 20736*X^3*W - 24576*X*Y^2*W + 73728*X^2*W^2 + 65536*Y^2*W^2 - 786432*X*W^3
+Genus(Ccan) = 3
+IsNonsingular(Ccan) = true
+
+3. Canonical map on the affine nondegenerate chart
+--------------------------------------------------
+On the affine chart Z=1, lambda=L/Z=l and t=T/Z=t.
+The second canonical coordinate is
+729/64*l^3*t^2 + 3645/32*l^2*t^2 + 27/8*l^3 + 3645/64*l*t^2 + 135/4*l^2 + 135/8*l
+Factorization:
+[
+<l, 1>,
+<t^2 + 8/27, 1>,
+<l^2 + 10*l + 5, 1>
+]
+Equivalently, phi_2 = (729/64)*l*(t^2 + 8/27)*(l^2 + 10*l + 5).
+If l*t != 0 and l,t are rational, then phi_2 cannot vanish:
+  t^2 + 8/27 has no rational root.
+  l^2 + 10*l + 5 has discriminant 80, not a rational square.
+
+4. Direct affine fiber check over the two rational canonical points
+-------------------------------------------------------------------
+For canonical point (0:0:1), saturating by l*t*phi_3 gives
+[
+1
+]
+For canonical point (-64/3:0:1), saturating by l*t*phi_3 gives
+[
+1
+]
+Thus there is no affine point with l*t != 0 and phi_3 != 0 mapping to either canonical rational point.
+
+5. Conclusion
+-------------
+Assuming Proposition 6.1, Ccan(Q) has only the two points above.
+Both points have second canonical coordinate Y=0.
+On the rational affine nondegenerate chart this would force
+l*(t^2 + 8/27)*(l^2 + 10*l + 5) = 0, impossible when l*t != 0.
+Hence the fiber product has no rational point with lambda*t != 0.
+
+Total time: 0.110 seconds, Total memory usage: 32.09MB
