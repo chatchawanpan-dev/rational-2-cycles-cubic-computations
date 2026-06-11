@@ -1,0 +1,84 @@
+Magma V2.29-6     Mon May 25 2026 09:19:58 on Chatchawans-Laptop [Seed = 
+3869195612]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "magma_5torsion_verification/prym_chabauty_route/scripts/c5_prym_t\
+orsion_fixed_locus_certificate.m"
+
+1. The genus-3 curve C5
+-----------------------
+Defining polynomial of C5:
+729*X^4 + 864*X^2*Y^2 + 256*Y^4 + 20736*X^3*W - 24576*X*Y^2*W + 73728*X^2*W^2 + 65536*Y^2*W^2 - 786432*X*W^3
+Genus(C5) = 3
+IsNonsingular(C5) = true
+IsHyperelliptic(C5) = false
+
+2. Quotient elliptic curve
+--------------------------
+Quotient elliptic curve minimal model = Elliptic Curve defined by y^2 = x^3 - x^2 + 12*x + 72 over Rational Field
+Expected model = Elliptic Curve defined by y^2 = x^3 - x^2 + 12*x + 72 over Rational Field
+RankBounds(E) = 1 1
+TorsionSubgroup(E) = 
+Abelian Group isomorphic to Z/2
+Defined on 1 generator
+Relations:
+2*$.1 = 0
+
+3. Prym candidate rank and finite-field torsion bound
+-----------------------------------------------------
+P5: v^2 = -9720*s^6 - 1080*s^5 - 600*s^4 - 400*s^3 - 100*s^2 + 20*s + 5
+Genus(P5) = 2
+Discriminant(fP) factorization = [ <2, 18>, <3, 8>, <5, 28> ]
+RankBounds(Jacobian(P5)) = 0 0
+TorsionSubgroup(Jacobian(P5)) = 
+Abelian Group isomorphic to Z/2
+Defined on 1 generator
+Relations:
+2*P[1] = 0
+p=7: #P5(F_p)=6, #P5(F_{p^2})=66, a1=2, a2=10, #J(P5)(F_p)=44
+  direct #Jacobian(ChangeRing(P5, GF(p))) = 44
+p=11: #P5(F_p)=10, #P5(F_{p^2})=138, a1=2, a2=10, #J(P5)(F_p)=108
+  direct #Jacobian(ChangeRing(P5, GF(p))) = 108
+p=13: #P5(F_p)=10, #P5(F_{p^2})=194, a1=4, a2=20, #J(P5)(F_p)=134
+  direct #Jacobian(ChangeRing(P5, GF(p))) = 134
+Orders at p=7,11,13 = [ 44, 108, 134 ]
+GCD of these orders = 2
+
+4. Fixed locus of the involution Y -> -Y
+----------------------------------------
+The only projective fixed point with Y != 0 would be (0:1:0).
+Fcan(0,1,0) = 256
+Fcan(X,0,W) = 729*X^4 + 20736*X^3*W + 73728*X^2*W^2 - 786432*X*W^3
+Factorization of Fcan(X,0,W) = [
+<X, 1>,
+<X + 64/3*W, 1>,
+<X^2 + 64/9*X*W - 4096/81*W^2, 1>
+]
+Quadratic factor after W=1: 81*xaff^2 + 576*xaff - 4096
+Discriminant = 1658880
+576^2 * 5 = 1658880
+Is discriminant a rational square? = false
+Rational fixed points certified by the factorization = {@ (0 : 0 : 1), (-64/3 : 0 : 1) @}
+
+5. Link to the singular X_0(5) fiber product
+--------------------------------------------
+The two fixed points correspond to the two visible canonical points
+from the X_0(5) fiber-product normalization certificate:
+  (0:0:1) and (-64/3:0:1).
+The companion normalization certificate avoids singular-model
+fiber artifacts and proves directly on Z=1 that
+the second canonical coordinate cannot vanish for rational L*T != 0.
+
+6. Certificate status
+---------------------
+Verified computational inputs for the Prym/fixed-locus proof route:
+  - C5 is smooth, genus 3, and non-hyperelliptic.
+  - The elliptic quotient is y^2 = x^3 - x^2 + 12*x + 72.
+  - The Ritzenthaler--Romagny Prym candidate has rank-zero Jacobian.
+  - The finite-field Jacobian orders at 7, 11, 13 are 44, 108, 134.
+  - Their gcd is 2.
+  - The fixed locus Y=0 has exactly two rational points.
+Together with the RR certificate and the X_0(5) normalization
+certificate, this supplies the computational input cited in Section 6.
+
+Total time: 0.830 seconds, Total memory usage: 83.16MB
