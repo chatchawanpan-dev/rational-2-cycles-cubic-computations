@@ -1,0 +1,121 @@
+Magma V2.29-6     Mon May 25 2026 09:19:58 on Chatchawans-Laptop [Seed = 
+3952226385]
+Type ? for help.  Type <Ctrl>-D to quit.
+
+Loading file "magma_7torsion_verification/scripts/verify_7torsion_basic.m"
+
+======================================================================
+Basic Magma checks for the 7-torsion argument
+======================================================================
+Manuscript target: Section "Exclusion of rational 7-torsion"
+
+======================================================================
+1. Polynomial identity
+======================================================================
+Verified:
+  N_7(mu) * (N_7(mu) - 1728*T_7(mu)) = A_7(mu)^3 * B_7(mu)^3 * R_7(mu)^2
+Degree(lhs) = 48
+
+======================================================================
+2. Hyperelliptic curve C_7
+======================================================================
+f(mu) = A_7(mu) * B_7(mu)
+Degree(f) = 8
+Genus(C_7) = 3
+IsSquarefree(f) = true
+Roots(A_7) over Q = []
+Roots(B_7) over Q = []
+Roots(A_7*B_7) over Q = []
+Discriminant(f) = -1119157462499328
+Factorization(Discriminant(f)) = [ <2, 24>, <3, 4>, <7, 7> ]
+Bad primes = [ 2, 3, 7 ]
+RankBound(J(C_7)) = 3
+
+======================================================================
+3. Known rational points
+======================================================================
+mu = 0, f(mu) = 1, y = +/- 1
+  points: (0 : 1 : 1) and (0 : -1 : 1)
+mu = 1, f(mu) = 1, y = +/- 1
+  points: (1 : 1 : 1) and (1 : -1 : 1)
+mu = -1/2, f(mu) = 49/256, y = +/- 7/16
+  points: (-1 : 7 : 2) and (-1 : -7 : 2)
+mu = 2/3, f(mu) = 49/6561, y = +/- 7/81
+  points: (2 : 7 : 3) and (2 : -7 : 3)
+mu = 3, f(mu) = 49, y = +/- 7
+  points: (3 : 7 : 1) and (3 : -7 : 1)
+Points at infinity = [ (1 : -1 : 0), (1 : 1 : 0) ]
+Total number of known points = 12
+Known points as a sequence:
+[ (0 : 1 : 1), (0 : -1 : 1), (1 : 1 : 1), (1 : -1 : 1), (-1 : 7 : 2), (-1 : -7 :
+2), (2 : 7 : 3), (2 : -7 : 3), (3 : 7 : 1), (3 : -7 : 1), (1 : -1 : 0), (1 : 1 :
+0) ]
+Points(C_7 : Bound := 100) = [ (1 : -1 : 0), (1 : 1 : 0), (0 : -1 : 1), (0 : 1 :
+1), (1 : -1 : 1), (1 : 1 : 1), (-1 : -7 : 2), (-1 : 7 : 2), (3 : -7 : 1), (3 : 7
+: 1), (2 : -7 : 3), (2 : 7 : 3) ]
+Known points match Points(C_7 : Bound := 100): true
+
+======================================================================
+4. Reduction at p = 5
+======================================================================
+#C_7(F_5) = 12
+Points(C_7(F_5)) = [ (1 : 1 : 0), (1 : 4 : 0), (0 : 1 : 1), (0 : 4 : 1), (1 : 1 
+: 1), (1 : 4 : 1), (2 : 3 : 1), (2 : 2 : 1), (3 : 3 : 1), (3 : 2 : 1), (4 : 3 : 
+1), (4 : 2 : 1) ]
+Reduction of the known affine rational points modulo 5:
+mu = 0, y = +/- 1  -->  (0 : 1 : 1) and (0 : 4 : 1)
+mu = 1, y = +/- 1  -->  (1 : 1 : 1) and (1 : 4 : 1)
+mu = -1/2, y = +/- 7/16  -->  (2 : 2 : 1) and (2 : 3 : 1)
+mu = 2/3, y = +/- 7/81  -->  (4 : 2 : 1) and (4 : 3 : 1)
+mu = 3, y = +/- 7  -->  (3 : 2 : 1) and (3 : 3 : 1)
+Points at infinity modulo 5 = [ (1 : 1 : 0), (1 : 4 : 0) ]
+Known rational points reduce bijectively onto C_7(F_5): true
+All affine F_5-points have y != 0: true
+
+======================================================================
+5. Square obstruction at the noncuspidal mu-values
+======================================================================
+mu = -1/2
+  quadratic in u = t^2: 3176523/16777216*u^2 + 117649/1048576*u - 63423/32
+  factorization: [
+    <u - 34992/343, 1>,
+    <u + 950272/9261, 1>
+]
+  roots: [ <-950272/9261, 1>, <34992/343, 1> ]
+    u = -950272/9261 is negative, so it cannot equal t^2.
+    u = 34992/343 is nonnegative.
+      numerator factorization = [ <2, 4>, <3, 7> ]
+      denominator factorization = [ <7, 3> ]
+      rational square? = false
+mu = 2/3
+  quadratic in u = t^2: 117649/10460353203*u^2 + 1882384/282429536481*u - 
+    15204352/129140163
+  factorization: [
+    <u - 34992/343, 1>,
+    <u + 950272/9261, 1>
+]
+  roots: [ <-950272/9261, 1>, <34992/343, 1> ]
+    u = -950272/9261 is negative, so it cannot equal t^2.
+    u = 34992/343 is nonnegative.
+      numerator factorization = [ <2, 4>, <3, 7> ]
+      denominator factorization = [ <7, 3> ]
+      rational square? = false
+mu = 3
+  quadratic in u = t^2: 3176523*u^2 + 1882384*u - 33251917824
+  factorization: [
+    <u - 34992/343, 1>,
+    <u + 950272/9261, 1>
+]
+  roots: [ <-950272/9261, 1>, <34992/343, 1> ]
+    u = -950272/9261 is negative, so it cannot equal t^2.
+    u = 34992/343 is nonnegative.
+      numerator factorization = [ <2, 4>, <3, 7> ]
+      denominator factorization = [ <7, 3> ]
+      rational square? = false
+
+======================================================================
+Completed
+======================================================================
+All basic 7-torsion Magma checks completed successfully.
+
+Total time: 0.590 seconds, Total memory usage: 85.16MB
