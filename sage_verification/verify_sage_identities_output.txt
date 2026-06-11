@@ -1,0 +1,57 @@
+
+==================================================
+Auxiliary elliptic curve in the 3-torsion argument
+==================================================
+E': y^2 = x^3 - 39*x - 70
+rank_bounds = (0, 0)
+rank = 0
+gens = []
+torsion = Torsion Subgroup isomorphic to Z/2 + Z/2 associated to the Elliptic Curve defined by y^2 = x^3 - 39*x - 70 over Rational Field
+torsion_points = [(-2 : 0 : 1), (-5 : 0 : 1), (0 : 1 : 0), (7 : 0 : 1)]
+status   = OK
+
+===================================================
+Duplication formulas and division-polynomial checks
+===================================================
+E_t': y^2 = x^3 - 16/3*x + (16*t^2 + 128/27)
+P = (4/3 : -4*t : 1)
+2P = (-8/3 : 4*t : 1)
+4P = ((16/3*t^2 + 4)/t^2 : (-4*t^4 - 16*t^2 - 8)/t^3 : 1)
+duplication status = OK
+
+psi_3(4/3)
+computed = 256*t^2
+expected = 256*t^2
+status   = OK
+
+psi_5(4/3)
+computed = -16777216*t^8 - 16777216*t^6
+expected = -16777216*t^8 - 16777216*t^6
+status   = OK
+
+psi_7(4/3)
+computed = 281474976710656*t^16 - 281474976710656*t^14 - 281474976710656*t^12
+expected = 281474976710656*t^16 - 281474976710656*t^14 - 281474976710656*t^12
+status   = OK
+
+psi_9(4/3)
+computed = 3626777458843887524118528*t^26 + 4835703278458516698824704*t^24 + 3626777458843887524118528*t^22 + 1208925819614629174706176*t^20
+expected = 3626777458843887524118528*t^26 + 4835703278458516698824704*t^24 + 3626777458843887524118528*t^22 + 1208925819614629174706176*t^20
+status   = OK
+
+psi_3(-8/3)
+computed = -512*t^2 - 256
+expected = -512*t^2 - 256
+status   = OK
+
+psi_5(-8/3)
+computed = -16777216*t^8 + 67108864*t^6 + 167772160*t^4 + 100663296*t^2 + 16777216
+expected = -16777216*t^8 + 67108864*t^6 + 167772160*t^4 + 100663296*t^2 + 16777216
+status   = OK
+
+psi_3(4/t^2 + 16/3)
+computed = (1024*t^10 + 2560*t^8 + 6144*t^6 + 7680*t^4 + 4096*t^2 + 768)/t^8
+expected = (1024*t^10 + 2560*t^8 + 6144*t^6 + 7680*t^4 + 4096*t^2 + 768)/t^8
+status   = OK
+
+All SageMath manuscript checks completed successfully.
