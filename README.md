@@ -11,6 +11,10 @@ descent, finite-field, and Chabauty computations cited in the manuscript.
 ## Contents
 
 - `sage_verification/`
+  - `verify_table_dictionary.sage`
+  - `verify_table_dictionary_output.txt`
+  - Generates the corrected sample rows in Table 1 and verifies the cycle
+    equations in exact rational arithmetic.
   - `verify_sage_identities.sage`
   - `verify_sage_identities_output.txt`
   - Verifies the auxiliary elliptic curve in the 3-torsion argument, the
@@ -26,14 +30,17 @@ descent, finite-field, and Chabauty computations cited in the manuscript.
   - SageMath script and outputs imported from the earlier short manuscript.
     These files support the division-polynomial checks and sample tables used
     in the combined manuscript.
-- `software_versions_first_submission.txt`
-  - Software and command records from the first-submission computation bundle.
+- `software_versions_feedback1_revision.txt`
+  - Software and command records from the Feedback 1 revision computation bundle.
 
 ## Reproducing the Outputs
 
 Run the SageMath verification:
 
 ```bash
+sage sage_verification/verify_table_dictionary.sage \
+  > sage_verification/verify_table_dictionary_output.txt
+
 sage sage_verification/verify_sage_identities.sage \
   > sage_verification/verify_sage_identities_output.txt
 ```
@@ -70,7 +77,7 @@ sage short_manuscript_sage/cubic_2periodic_supplementary.sage \
 
 ## Software
 
-The first-submission outputs were archived using SageMath 10.7 and Magma
-V2.29-6. See `software_versions_first_submission.txt` for the recorded
-executables and version output.
-
+The Feedback 1 table-verification output was archived using SageMath 10.9.
+The Magma certificate outputs were archived with Magma V2.29-6. See
+`software_versions_feedback1_revision.txt` for the recorded executables and
+commands.
