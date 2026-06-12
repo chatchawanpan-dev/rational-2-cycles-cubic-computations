@@ -1,0 +1,32 @@
+Software versions recorded for the Feedback 1 revision
+======================================================
+
+SageMath:
+  SageMath version 10.9
+  Executable used for the Feedback 1 table verification:
+  /opt/homebrew/bin/sage
+
+Magma:
+  V2.29-6
+  Executable available on this laptop:
+  /opt/homebrew/bin/magma
+
+Public reproducibility repository:
+  https://github.com/chatchawanpan-dev/rational-2-cycles-cubic-computations
+
+Exact commands for the archived outputs
+=======================================
+
+/opt/homebrew/bin/sage sage_verification/verify_table_dictionary.sage > sage_verification/verify_table_dictionary_output.txt 2>&1
+
+/opt/homebrew/bin/sage sage_verification/verify_sage_identities.sage > sage_verification/verify_sage_identities_output.txt 2>&1
+
+/opt/homebrew/bin/magma magma_5torsion_verification/scripts/c5_x0_normalization_degeneracy_certificate.m > magma_5torsion_verification/results/c5_x0_normalization_degeneracy_certificate_output.txt 2>&1
+
+/opt/homebrew/bin/magma magma_5torsion_verification/prym_chabauty_route/scripts/c5_ritzenthaler_romagny_prym_certificate.m > magma_5torsion_verification/prym_chabauty_route/results/c5_ritzenthaler_romagny_prym_certificate_output.txt 2>&1
+
+/opt/homebrew/bin/magma magma_5torsion_verification/prym_chabauty_route/scripts/c5_prym_torsion_fixed_locus_certificate.m > magma_5torsion_verification/prym_chabauty_route/results/c5_prym_torsion_fixed_locus_certificate_output.txt 2>&1
+
+/opt/homebrew/bin/magma magma_7torsion_verification/scripts/verify_7torsion_basic.m > magma_7torsion_verification/results/verify_7torsion_basic_output.txt 2>&1
+
+/opt/homebrew/bin/magma magma_7torsion_verification/reviewer_chabauty_route/scripts/c7_reviewers_elliptic_chabauty.m > magma_7torsion_verification/reviewer_chabauty_route/results/c7_reviewers_elliptic_chabauty_output.txt 2>&1
