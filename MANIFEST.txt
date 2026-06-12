@@ -5,13 +5,15 @@ Manuscript:
   Rational 2-Cycles for x^3+bx+a and the Elliptic Family Y^2=X^3+4X^2+16t^2
 
 Bundle purpose:
-  SageMath and Magma scripts plus raw outputs for the first submission.
+  SageMath and Magma scripts plus raw outputs for the Feedback 1 revision.
 
 Files:
   README.md
   MANIFEST.txt
-  software_versions_first_submission.txt
+  software_versions_feedback1_revision.txt
 
+  sage_verification/verify_table_dictionary.sage
+  sage_verification/verify_table_dictionary_output.txt
   sage_verification/verify_sage_identities.sage
   sage_verification/verify_sage_identities_output.txt
 
@@ -30,4 +32,3 @@ Files:
   short_manuscript_sage/cubic_2periodic_supplementary.sage
   short_manuscript_sage/cubic_2periodic_supplementary_output.txt
   short_manuscript_sage/division_polynomials_output.txt
-
